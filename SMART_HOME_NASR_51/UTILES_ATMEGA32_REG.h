@@ -2,7 +2,7 @@
  * ATMEGA32_REG.h
  *
  * Created: 3/31/2023 3:13:36 PM
- *  Author: Mostafa Sabry
+ *  Author: Group 1
  */ 
 
 
@@ -94,14 +94,22 @@
 #define UBRRL (*(volatile u8*)0x29)
 #define UBRRH (*(volatile u8*)0x40)
 
-/*--------------------UART Registers--------------------*/
+/*--------------------SPI Registers--------------------*/
 // SPI Control Register – SPCR
 #define SPCR (*(volatile u8*)0x2D)
 // SPI Status Register – SPSR
 #define SPSR (*(volatile u8*)0x2E)
 // SPI Data Register – SPDR
 #define SPDR (*(volatile u8*)0x2F)
-// 
-
+ 
+/*------------------EEPROM Registers------------------*/
+// The EEPROM Address Register – EEARH and EEARL
+#define EEAR_u16    (*(volatile u16*) 0x3E)
+// The EEPROM Data Register – EEDR
+#define EEDR        (*(volatile u8*) 0x3D)
+// The EEPROM Control Register – EECR
+#define EECR        (*(volatile u8*) 0x3C)
+// Store Program Memory Control Register – SPMCR
+#define SPMCR       (*(volatile u8*) 0x57)
 
 #endif /* ATMEGA32_REG_H_ */

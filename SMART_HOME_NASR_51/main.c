@@ -10,10 +10,11 @@
 #include "UTILES_ATMEGA32_REG.h"
 
 /* MCAL */
-
+#include "DIO_interface.h"
+#include "EEPROM_interface.h"
 
 /* HAL */
-
+#include "LED_Interface.h"
 
 
 int main(void)

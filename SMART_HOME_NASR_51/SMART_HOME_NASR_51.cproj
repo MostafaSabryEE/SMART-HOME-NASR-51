@@ -132,6 +132,15 @@
     <Compile Include="EEPROM_program.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="LED_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LED_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LED_Program.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
